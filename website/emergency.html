@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Куда ехать с ребёнком — дежурные больницы Будапешта</title>
+<meta name="description" content="Дежурные детские травматологии и хирургии Будапешта по дням недели. Скорая 104. Бесплатно, без регистрации.">
+<meta name="theme-color" content="#8C1D1D">
+<link rel="canonical" href="https://budapest-mamas.netlify.app/emergency.html">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%238C1D1D'/%3E%3Cpath d='M40 20h20v20h20v20H60v20H40V60H20V40h20z' fill='white'/%3E%3C/svg%3E">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FAF8F5; --card:#FFFFFF; --ink:#181D1D; --dim:#5E6C6C;
+  --line:#E0E7E7; --teal:#2D6A6A; --tealbg:#E8F2F2;
+  --red:#8C1D1D; --redbg:#FBEDED; --amber:#8A5510; --amberbg:#FBF2E5;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0E1414; --card:#161E1E; --ink:#E9F0F0; --dim:#93A5A5;
+    --line:#23302F; --teal:#5FB8B8; --tealbg:#122626;
+    --red:#F08A8A; --redbg:#2A1414; --amber:#E3A954; --amberbg:#2A2012;
+  }
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.55;
+  -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased;
+  padding:20px 18px calc(36px + env(safe-area-inset-bottom));
+  max-width:560px; margin:0 auto;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal); outline-offset:3px; border-radius:6px}
+
+.back{display:inline-block; font-size:13.5px; color:var(--dim); text-decoration:none; margin-bottom:18px}
+.back:hover{color:var(--teal)}
+
+.sos{
+  display:flex; align-items:center; gap:16px;
+  background:var(--red); color:#fff; text-decoration:none;
+  border-radius:16px; padding:20px 22px; margin-bottom:26px;
+}
+.sos-num{font-size:34px; font-weight:800; letter-spacing:-.5px; line-height:1}
+.sos-txt{font-size:14px; opacity:.92; line-height:1.4}
+
+h1{font-size:21px; font-weight:700; letter-spacing:-.3px; margin-bottom:6px}
+.lede{font-size:14.5px; color:var(--dim); margin-bottom:26px}
+
+.q{font-size:13px; font-weight:700; color:var(--dim); margin-bottom:9px}
+.row{display:grid; gap:7px; margin-bottom:22px}
+.row-7{grid-template-columns:repeat(7,1fr); gap:5px}
+.row-2{grid-template-columns:1fr 1fr}
+
+button{
+  font:inherit; cursor:pointer; color:var(--ink);
+  background:var(--card); border:1.5px solid var(--line);
+  border-radius:12px; min-height:54px; padding:10px 6px;
+  font-size:15px; transition:none;
+}
+.row-7 button{font-size:14px; font-weight:600; min-height:50px; padding:8px 2px}
+button[aria-pressed="true"]{
+  background:var(--teal); border-color:var(--teal); color:#fff; font-weight:700;
+}
+@media (prefers-color-scheme:dark){ button[aria-pressed="true"]{color:#081414} }
+
+.card{background:var(--card); border:1.5px solid var(--line); border-radius:16px; padding:22px; margin-bottom:14px}
+.card-lbl{font-size:13px; color:var(--dim); margin-bottom:8px}
+.card-name{font-size:25px; font-weight:700; letter-spacing:-.4px; line-height:1.2; margin-bottom:12px}
+.card-addr{font-size:15.5px; color:var(--dim); white-space:pre-line; margin-bottom:16px}
+.act{
+  display:block; text-align:center; text-decoration:none;
+  border:1.5px solid var(--teal); color:var(--teal);
+  border-radius:12px; padding:15px; font-size:16px; font-weight:700; margin-top:9px;
+}
+.act-fill{background:var(--teal); color:#fff; border-color:var(--teal)}
+@media (prefers-color-scheme:dark){ .act-fill{color:#081414} }
+
+.note{background:var(--amberbg); color:var(--amber); border-radius:12px; padding:14px 16px; font-size:14px; margin-top:14px}
+
+.live{
+  display:block; text-align:center; text-decoration:none;
+  background:var(--tealbg); color:var(--teal);
+  border-radius:14px; padding:17px; font-size:16px; font-weight:700; margin-bottom:10px;
+}
+.hint{font-size:13.5px; color:var(--dim); text-align:center; margin-bottom:32px}
+
+h2{font-size:17px; font-weight:700; margin:0 0 12px; padding-top:26px; border-top:1.5px solid var(--line)}
+.ph{background:var(--card); border:1.5px solid var(--line); border-radius:12px; padding:15px 17px; margin-bottom:9px}
+.ph-n{font-size:16px; font-weight:700; margin-bottom:3px}
+.ph-a{font-size:14px; color:var(--dim)}
+.ph-t{display:inline-block; margin-top:8px; font-size:15px; font-weight:700; color:var(--teal); text-decoration:none}
+
+footer{margin-top:32px; padding-top:20px; border-top:1.5px solid var(--line); font-size:13px; color:var(--dim)}
+footer a{color:var(--teal)}
+</style>
+</head>
+<body>
+
+<a class="back" href="/baby.html">← Полный гайд Budapest Mamas</a>
+
+<a class="sos" href="tel:104">
+  <span class="sos-num">104</span>
+  <span class="sos-txt">Скорая. Судороги, дыхание,<br>потеря сознания, сильное кровотечение</span>
+</a>
+
+<h1>Куда ехать с ребёнком</h1>
+<p class="lede">В Будапеште детские травматологии и хирургии дежурят по графику — принимает не ближайшая больница, а дежурная на сегодня.</p>
+
+<p class="q">День</p>
+<div class="row row-7" id="days">
+  <button data-d="0">Пн</button><button data-d="1">Вт</button><button data-d="2">Ср</button>
+  <button data-d="3">Чт</button><button data-d="4">Пт</button><button data-d="5">Сб</button>
+  <button data-d="6">Вс</button>
+</div>
+
+<p class="q">Часть города</p>
+<div class="row row-2" id="zones">
+  <button data-z="E">Север, É</button>
+  <button data-z="D">Юг, D</button>
+</div>
+
+<p class="q">Что случилось</p>
+<div class="row row-2" id="kinds">
+  <button data-k="t">Травма, перелом</button>
+  <button data-k="s">Хирургия</button>
+</div>
+
+<div class="card" id="result"></div>
+
+<a class="live" href="https://surgossegi.info" target="_blank">Кто дежурит прямо сейчас</a>
+<p class="hint">surgossegi.info — официальный поиск дежурств. Если сомневаетесь в зоне или дне, смотрите там.</p>
+
+<h2>Круглосуточные аптеки</h2>
+<div class="ph">
+  <p class="ph-n">Déli Gyógyszertár</p>
+  <p class="ph-a">1023 Budapest, Alkotás u. 1/B</p>
+  <a class="ph-t" href="tel:+3613554691">+36 1 355 4691</a>
+</div>
+<div class="ph">
+  <p class="ph-n">Benu Gyógyszertár</p>
+  <p class="ph-a">1015 Budapest, Széna tér 1.</p>
+  <a class="ph-t" href="tel:+3612257830">+36 1 225 7830</a>
+</div>
+
+<footer>
+  <p>График дежурств по официальной схеме Szent János Centrumkórház. Перед выездом лучше сверяться с <a href="https://surgossegi.info">surgossegi.info</a>.</p>
+  <p style="margin-top:10px">Мамы Будапешта — <a href="/baby.html">полный гайд</a></p>
+</footer>
+
+<script>
+var H = {
+  beth: { n:"Bethesda Gyermekkórház", a:"1146 Budapest, Bethesda u. 3." },
+  jan:  { n:"Szent János Kórház", a:"1125 Budapest, Diós árok 1–3.\nКорпус 19, вход для скорой", t:"+3614584525" },
+  heim: { n:"Heim Pál", a:"1089 Budapest, Üllői út 86." },
+  mann: { n:"Dr. Manninger Jenő Baleseti Központ", a:"1081 Budapest, Fiumei út 17." },
+  sem:  { n:"Semmelweis, I. или II. клиника", a:"I. Sz. — 1083 Budapest, Bókay János u. 53–54.\nII. Sz. — 1094 Budapest, Tűzoltó u. 7.", alt:true }
+};
+var SCHED = {
+  tE:["beth","jan","beth","heim","jan","beth","jan"],
+  tD:["heim","mann","heim","mann","mann","heim","mann"],
+  sE:["beth","jan","beth","sem","sem","beth","jan"],
+  sD:["heim","jan","heim","sem","sem","heim","jan"]
+};
+
+var state = { d:(new Date().getDay() + 6) % 7, z:"E", k:"t" };
+
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+
+function render(){
+  var h = H[ SCHED[state.k + state.z][state.d] ];
+  var maps = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(h.n + ", Budapest");
+  var html =
+    '<p class="card-lbl">Дежурит</p>' +
+    '<p class="card-name">' + esc(h.n) + '</p>' +
+    '<p class="card-addr">' + esc(h.a) + '</p>' +
+    '<a class="act act-fill" href="' + maps + '">Построить маршрут</a>';
+  if (h.t) html += '<a class="act" href="tel:' + h.t + '">Позвонить в отделение</a>';
+  if (h.alt) html += '<p class="note">Дежурство чередуется по чётности недели. Проверьте на surgossegi.info, прежде чем выезжать.</p>';
+  document.getElementById("result").innerHTML = html;
+
+  set("days", "d", state.d);
+  set("zones", "z", state.z);
+  set("kinds", "k", state.k);
+}
+
+function set(id, attr, val){
+  var list = document.getElementById(id).getElementsByTagName("button");
+  for (var i = 0; i < list.length; i++){
+    list[i].setAttribute("aria-pressed", String(list[i].dataset[attr] == val));
+  }
+}
+
+function bind(id, attr, cast){
+  document.getElementById(id).addEventListener("click", function(e){
+    var b = e.target.closest("button");
+    if (!b) return;
+    state[attr] = cast ? cast(b.dataset[attr]) : b.dataset[attr];
+    render();
+  });
+}
+
+bind("days", "d", Number);
+bind("zones", "z");
+bind("kinds", "k");
+render();
+</script>
+</body>
+</html>

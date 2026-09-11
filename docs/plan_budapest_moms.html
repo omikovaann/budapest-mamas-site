@@ -1,0 +1,132 @@
+
+<style>
+.block { margin-bottom: 1.5rem; }
+.block-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+.block-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 400; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.guide-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 12px 14px; cursor: pointer; transition: border-color 0.15s; }
+.guide-card:hover { border-color: var(--color-border-secondary); }
+.guide-icon { font-size: 16px; margin-bottom: 6px; }
+.guide-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+.guide-desc { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 8px; line-height: 1.4; }
+.guide-meta { font-size: 11px; color: var(--color-text-tertiary); }
+.tag { display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 10px; margin-right: 4px; margin-top: 4px; }
+.tag-ready { background: #EAF3DE; color: #3B6D11; }
+.tag-rich { background: #E6F1FB; color: #185FA5; }
+.tag-unique { background: #FAEEDA; color: #854F0B; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+</style>
+
+<div style="padding: 1rem 0;">
+
+<div class="block">
+  <div class="block-title">
+    <span style="width:10px;height:10px;border-radius:50%;background:#D85A30;display:inline-block;flex-shrink:0;"></span>
+    Блок 1 — медицина и беременность
+    <span class="block-badge" style="background:#FAECE7;color:#993C1D;">~4500 сообщений</span>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Врачи и клиники Будапешта для беременных')">
+      <div class="guide-icon">🏥</div>
+      <div class="guide-name">Врачи и клиники для беременных</div>
+      <div class="guide-desc">Матернити, Дуна Медикал, Медиковер — отзывы, цены, как записаться</div>
+      <div><span class="tag tag-rich">много отзывов</span><span class="tag tag-unique">только в чате</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Скрининги и анализы при беременности в Венгрии')">
+      <div class="guide-icon">🔬</div>
+      <div class="guide-name">Скрининги и анализы</div>
+      <div class="guide-desc">Комбинированный тест, НИПТ, ГСД — где делать, что ожидать</div>
+      <div><span class="tag tag-rich">много обсуждений</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Роды в Будапеште — роддомы, контракты, что взять')">
+      <div class="guide-icon">👶</div>
+      <div class="guide-name">Роды в Будапеште</div>
+      <div class="guide-desc">Матернити vs Роберт Карлис — контракты, что взять, как всё устроено</div>
+      <div><span class="tag tag-rich">много опыта</span><span class="tag tag-unique">только в чате</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Послеродовой период — восстановление мамы в Будапеште')">
+      <div class="guide-icon">🌱</div>
+      <div class="guide-name">Восстановление после родов</div>
+      <div class="guide-desc">ГВ, мастит, здоровье мамы, психолог, спорт — первые месяцы</div>
+      <div><span class="tag tag-ready">есть протокол маститу</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="block">
+  <div class="block-title">
+    <span style="width:10px;height:10px;border-radius:50%;background:#1D9E75;display:inline-block;flex-shrink:0;"></span>
+    Блок 2 — малыш
+    <span class="block-badge" style="background:#E1F5EE;color:#0F6E56;">~3800 сообщений</span>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Детские врачи в Будапеште — педиатры, прививки, здоровье')">
+      <div class="guide-icon">👩‍⚕️</div>
+      <div class="guide-name">Детские врачи и здоровье</div>
+      <div class="guide-desc">Хазиорвош, педиатры, прививки по венгерскому календарю</div>
+      <div><span class="tag tag-ready">есть гайд по вакцинации</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Сон малыша — регрессы, укладывание, советы')">
+      <div class="guide-icon">💤</div>
+      <div class="guide-name">Сон малыша</div>
+      <div class="guide-desc">Регрессы, укладывание, что работало у мам из чата</div>
+      <div><span class="tag tag-rich">живой опыт</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Прикорм — с чего начать, что говорят мамы из Будапешта')">
+      <div class="guide-icon">🥣</div>
+      <div class="guide-name">Прикорм и питание</div>
+      <div class="guide-desc">Педагогический и классический прикорм, аллергии, что купить</div>
+      <div><span class="tag tag-rich">много советов</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Детская больница в Будапеште — как попасть, что взять')">
+      <div class="guide-icon">🏨</div>
+      <div class="guide-name">Детская больница</div>
+      <div class="guide-desc">Как устроено, что взять с собой, права родителей</div>
+      <div><span class="tag tag-ready">есть список вещей</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="block">
+  <div class="block-title">
+    <span style="width:10px;height:10px;border-radius:50%;background:#185FA5;display:inline-block;flex-shrink:0;"></span>
+    Блок 3 — жизнь в Будапеште
+    <span class="block-badge" style="background:#E6F1FB;color:#185FA5;">~4000 сообщений</span>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Документы для ребёнка в Венгрии — ВНЖ, гражданство, свидетельство о рождении')">
+      <div class="guide-icon">📋</div>
+      <div class="guide-name">Документы на ребёнка</div>
+      <div class="guide-desc">ВНЖ, гражданство, свидетельство о рождении, паспорт, разрешение на выезд</div>
+      <div><span class="tag tag-ready">есть формы</span><span class="tag tag-unique">уникально</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Пособия и декрет в Венгрии для иностранцев')">
+      <div class="guide-icon">💰</div>
+      <div class="guide-name">Пособия и декрет</div>
+      <div class="guide-desc">ГЙЕС, ГЕД, детские выплаты, банки, как получить</div>
+      <div><span class="tag tag-unique">много опыта экспатов</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Покупки для малыша в Будапеште — где купить, что рекомендуют')">
+      <div class="guide-icon">🛒</div>
+      <div class="guide-name">Где покупать для малыша</div>
+      <div class="guide-desc">Brendon, Rossmann, DM, онлайн — лучшие места и лайфхаки</div>
+      <div><span class="tag tag-rich">много ссылок</span></div>
+    </div>
+    <div class="guide-card" onclick="sendPrompt('Напиши гайд: Активности с малышом в Будапеште — парки, бассейны, встречи')">
+      <div class="guide-icon">👭</div>
+      <div class="guide-name">Активности с малышом</div>
+      <div class="guide-desc">Бэбиплавание, Варошлигет, детские кафе, встречи мам</div>
+      <div><span class="tag tag-ready">есть скрин бассейна</span><span class="tag tag-unique">уникально</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px 14px; font-size: 12px; color: var(--color-text-secondary); margin-top: 0.5rem;">
+  Нажми на любую карточку — и я сразу начну писать этот гайд на основе реальных сообщений из чата ↗
+</div>
+
+</div>
